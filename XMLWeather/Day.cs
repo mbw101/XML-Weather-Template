@@ -9,6 +9,7 @@ namespace XMLWeather
     {
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
             windSpeed, windDirection, precipitation, visibility;
+        public int conditionNumber = 0;
 
         public Day()
         {
