@@ -97,9 +97,10 @@
             // 
             // imageBox
             // 
-            this.imageBox.Location = new System.Drawing.Point(31, 129);
+            this.imageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageBox.Location = new System.Drawing.Point(31, 117);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(127, 83);
+            this.imageBox.Size = new System.Drawing.Size(142, 119);
             this.imageBox.TabIndex = 45;
             this.imageBox.TabStop = false;
             // 
