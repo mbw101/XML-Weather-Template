@@ -37,7 +37,11 @@ namespace XMLWeather
                 // create a day object
                 Day d = new Day();
 
-                //TODO: fill day object with required data
+                // Get the city and country
+                reader.ReadToFollowing("name");
+                d.location = reader.ReadString();
+                reader.ReadToFollowing("country");
+                d.location += ", " + reader.ReadString();
 
                 // get the date
                 reader.ReadToFollowing("time");
