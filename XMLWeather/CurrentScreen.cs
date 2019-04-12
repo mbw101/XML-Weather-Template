@@ -54,11 +54,13 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
-            // TODO: Complete current screen
+            // display the current location
             locationLabel.Text = Form1.days[0].location;
 
-            // convert date
+            // convert date and display it
             dateLabel.Text = DateTime.Now.ToString("dddd, h:mm tt");
+
+            // display current temperatures and min/max temperatures
             currentLabel.Text = Convert.ToDouble(Form1.days[0].currentTemp).ToString("0.") + "°C";
             minLabel.Text = Convert.ToDouble(Form1.days[0].tempLow).ToString("0.") + "°C";
             maxLabel.Text = Convert.ToDouble(Form1.days[0].tempHigh).ToString("0.") + "°C";

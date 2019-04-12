@@ -133,6 +133,7 @@
             this.minLabel.Size = new System.Drawing.Size(82, 31);
             this.minLabel.TabIndex = 48;
             this.minLabel.Text = "14 °C";
+            this.minLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // maxLabel
             // 
@@ -143,6 +144,7 @@
             this.maxLabel.Size = new System.Drawing.Size(82, 31);
             this.maxLabel.TabIndex = 49;
             this.maxLabel.Text = "22 °C";
+            this.maxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CurrentScreen
             // 

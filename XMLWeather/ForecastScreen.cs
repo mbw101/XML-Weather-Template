@@ -15,131 +15,212 @@ namespace XMLWeather
         {
             InitializeComponent();
             displayForecast();
+            DisplayCondition();
         }
 
-        public void DisplayCondition(int day)
+        public void DisplayCondition()
         {
-            // TODO: save condition and change all the 5 day pictures
+            // save condition and change all the 5 day pictures
             string conditionsText;
             Image conditionsImage;
+            int counter = 0;
 
-            if (Form1.days[day].conditionNumber >= 200 && Form1.days[day].conditionNumber <= 232)
+            foreach (Day day in Form1.days)
             {
-                // thunderstorm
-                conditionsText = "Thunderstorm";
-                conditionsImage = Properties.Resources.storm;
-            }
-            else if ((Form1.days[day].conditionNumber >= 300 && Form1.days[day].conditionNumber <= 321)
-                || (Form1.days[day].conditionNumber >= 500 && Form1.days[day].conditionNumber <= 531))
-            {
-                // rain
-                conditionsText = "Rain";
-                conditionsImage = Properties.Resources.rain;
-            }
-            else if (Form1.days[day].conditionNumber >= 600 && Form1.days[day].conditionNumber <= 622)
-            {
-                // snow
-                conditionsText = "Snow";
-                conditionsImage = Properties.Resources.snow;
-            }
-            else if (Form1.days[day].conditionNumber >= 801 && Form1.days[day].conditionNumber <= 804)
-            {
-                // cloudy
-                conditionsText = "Cloudy";
-                conditionsImage = Properties.Resources.cloudy;
-            }
-            else
-            {
-                // 800 = sun
-                conditionsText = "Sunny";
-                conditionsImage = Properties.Resources.sunny;
-            }
-
-            for (int counter = 0; counter <= 5; counter++)
-            {
-                switch (counter)
+                if (day.conditionNumber >= 200 && day.conditionNumber <= 232)
                 {
-                    case 0:
+                    // thunderstorm
+                    conditionsText = "Thunderstorm";
+                    conditionsImage = Properties.Resources.storm;
+
+                    if (counter == 0)
+                    {
                         conditions1Label.Text = conditionsText;
                         imageBox1.BackgroundImage = conditionsImage;
-                        break;
-
-                    case 1:
+                    }
+                    else if (counter == 1)
+                    {
                         conditions2Label.Text = conditionsText;
                         imageBox2.BackgroundImage = conditionsImage;
-                        break;
-
-                    case 2:
+                    }
+                    else if (counter == 2)
+                    {
                         conditions3Label.Text = conditionsText;
                         imageBox3.BackgroundImage = conditionsImage;
-                        break;
-
-                    case 3:
+                    }
+                    else if (counter == 3)
+                    {
                         conditions4Label.Text = conditionsText;
                         imageBox4.BackgroundImage = conditionsImage;
-                        break;
-
-                    case 4:
+                    }
+                    else if (counter == 4)
+                    {
                         conditions5Label.Text = conditionsText;
                         imageBox5.BackgroundImage = conditionsImage;
-                        break;
+                    }
                 }
+                else if ((day.conditionNumber >= 300 && day.conditionNumber <= 321)
+                    || (day.conditionNumber >= 500 && day.conditionNumber <= 531))
+                {
+                    // rain
+                    conditionsText = "Rain";
+                    conditionsImage = Properties.Resources.rain;
+
+                    if (counter == 0)
+                    {
+                        conditions1Label.Text = conditionsText;
+                        imageBox1.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 1)
+                    {
+                        conditions2Label.Text = conditionsText;
+                        imageBox2.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 2)
+                    {
+                        conditions3Label.Text = conditionsText;
+                        imageBox3.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 3)
+                    {
+                        conditions4Label.Text = conditionsText;
+                        imageBox4.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 4)
+                    {
+                        conditions5Label.Text = conditionsText;
+                        imageBox5.BackgroundImage = conditionsImage;
+                    }
+                }
+                else if (day.conditionNumber >= 600 && day.conditionNumber <= 622)
+                {
+                    // snow
+                    conditionsText = "Snow";
+                    conditionsImage = Properties.Resources.snow;
+
+                    if (counter == 0)
+                    {
+                        conditions1Label.Text = conditionsText;
+                        imageBox1.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 1)
+                    {
+                        conditions2Label.Text = conditionsText;
+                        imageBox2.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 2)
+                    {
+                        conditions3Label.Text = conditionsText;
+                        imageBox3.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 3)
+                    {
+                        conditions4Label.Text = conditionsText;
+                        imageBox4.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 4)
+                    {
+                        conditions5Label.Text = conditionsText;
+                        imageBox5.BackgroundImage = conditionsImage;
+                    }
+                }
+                else if (day.conditionNumber >= 801 && day.conditionNumber <= 804)
+                {
+                    // cloudy
+                    conditionsText = "Cloudy";
+                    conditionsImage = Properties.Resources.cloudy;
+
+                    if (counter == 0)
+                    {
+                        conditions1Label.Text = conditionsText;
+                        imageBox1.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 1)
+                    {
+                        conditions2Label.Text = conditionsText;
+                        imageBox2.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 2)
+                    {
+                        conditions3Label.Text = conditionsText;
+                        imageBox3.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 3)
+                    {
+                        conditions4Label.Text = conditionsText;
+                        imageBox4.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 4)
+                    {
+                        conditions5Label.Text = conditionsText;
+                        imageBox5.BackgroundImage = conditionsImage;
+                    }
+                }
+                else
+                {
+                    // 800 = sun
+                    conditionsText = "Sunny";
+                    conditionsImage = Properties.Resources.sunny;
+
+                    if (counter == 0)
+                    {
+                        conditions1Label.Text = conditionsText;
+                        imageBox1.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 1)
+                    {
+                        conditions2Label.Text = conditionsText;
+                        imageBox2.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 2)
+                    {
+                        conditions3Label.Text = conditionsText;
+                        imageBox3.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 3)
+                    {
+                        conditions4Label.Text = conditionsText;
+                        imageBox4.BackgroundImage = conditionsImage;
+                    }
+                    else if (counter == 4)
+                    {
+                        conditions5Label.Text = conditionsText;
+                        imageBox5.BackgroundImage = conditionsImage;
+                    }
+                }
+
+                counter++;
             }
         }
 
         public void displayForecast()
         {
-            // TODO: Show next 5 days 
+            // Show next 5 days 
+            // display the location
             locationLabel.Text = Form1.days[0].location;
-            date1Label.Text = DateTime.Now.ToString("dddd, MMMM dd");
 
-            for (int counter = 1; counter <= 4; counter++)
-            {
-                switch (counter)
-                {
-                    case 1:
-                        date2Label.Text = DateTime.Now.AddDays(counter).ToString("dddd, MMMM dd");
-                        break;
+            // display all the dates and days
+            date1Label.Text = DateTime.Now.AddDays(0).ToString("dddd, MMMM dd");
+            date2Label.Text = DateTime.Now.AddDays(1).ToString("dddd, MMMM dd");
+            date3Label.Text = DateTime.Now.AddDays(2).ToString("dddd, MMMM dd");
+            date4Label.Text = DateTime.Now.AddDays(3).ToString("dddd, MMMM dd");
+            date5Label.Text = DateTime.Now.AddDays(4).ToString("dddd, MMMM dd");
 
-                    case 2:
-                        date3Label.Text = DateTime.Now.AddDays(counter).ToString("dddd, MMMM dd");
-                        break;
+            // display min/max tempertures for each day
+            temperature1Label.Text = Convert.ToDouble(Form1.days[0].tempLow).ToString("0.") + "°C"
+                + "/" + Convert.ToDouble(Form1.days[0].tempHigh).ToString("0.") + "°C";
 
-                    case 3:
-                        date4Label.Text = DateTime.Now.AddDays(counter).ToString("dddd, MMMM dd");
-                        break;
+            temperature2Label.Text = Convert.ToDouble(Form1.days[1].tempLow).ToString("0.") + "°C"
+                + "/" + Convert.ToDouble(Form1.days[1].tempHigh).ToString("0.") + "°C";
 
-                    case 4:
-                        date5Label.Text = DateTime.Now.AddDays(counter).ToString("dddd, MMMM dd");
-                        break;
-                }
-            }
+            temperature3Label.Text = Convert.ToDouble(Form1.days[2].tempLow).ToString("0.") + "°C"
+                + "/" + Convert.ToDouble(Form1.days[2].tempHigh).ToString("0.") + "°C";
 
-            for (int i = 0; i <= 4; i++)
-            {
-                switch (i)
-                {
-                    case 0:
-                        
-                        break;
+            temperature4Label.Text = Convert.ToDouble(Form1.days[3].tempLow).ToString("0.") + "°C"
+                + "/" + Convert.ToDouble(Form1.days[3].tempHigh).ToString("0.") + "°C";
 
-                    case 1:
-
-                        break;
-
-                    case 2:
-
-                        break;
-
-                    case 3:
-
-                        break;
-
-                    case 4:
-
-                        break;
-                }
-            }
+            temperature5Label.Text = Convert.ToDouble(Form1.days[4].tempLow).ToString("0.") + "°C"
+                + "/" + Convert.ToDouble(Form1.days[4].tempHigh).ToString("0.") + "°C";
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -152,3 +233,4 @@ namespace XMLWeather
         }
     }
 }
+

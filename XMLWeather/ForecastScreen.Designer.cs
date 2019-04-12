@@ -234,45 +234,45 @@
             // imageBox1
             // 
             this.imageBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageBox1.Location = new System.Drawing.Point(512, 55);
+            this.imageBox1.Location = new System.Drawing.Point(512, 47);
             this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(66, 29);
+            this.imageBox1.Size = new System.Drawing.Size(66, 47);
             this.imageBox1.TabIndex = 78;
             this.imageBox1.TabStop = false;
             // 
             // imageBox2
             // 
             this.imageBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageBox2.Location = new System.Drawing.Point(512, 118);
+            this.imageBox2.Location = new System.Drawing.Point(512, 107);
             this.imageBox2.Name = "imageBox2";
-            this.imageBox2.Size = new System.Drawing.Size(66, 29);
+            this.imageBox2.Size = new System.Drawing.Size(66, 47);
             this.imageBox2.TabIndex = 79;
             this.imageBox2.TabStop = false;
             // 
             // imageBox4
             // 
             this.imageBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageBox4.Location = new System.Drawing.Point(512, 244);
+            this.imageBox4.Location = new System.Drawing.Point(512, 227);
             this.imageBox4.Name = "imageBox4";
-            this.imageBox4.Size = new System.Drawing.Size(66, 29);
+            this.imageBox4.Size = new System.Drawing.Size(66, 47);
             this.imageBox4.TabIndex = 81;
             this.imageBox4.TabStop = false;
             // 
             // imageBox3
             // 
             this.imageBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageBox3.Location = new System.Drawing.Point(512, 181);
+            this.imageBox3.Location = new System.Drawing.Point(512, 167);
             this.imageBox3.Name = "imageBox3";
-            this.imageBox3.Size = new System.Drawing.Size(66, 29);
+            this.imageBox3.Size = new System.Drawing.Size(66, 47);
             this.imageBox3.TabIndex = 80;
             this.imageBox3.TabStop = false;
             // 
             // imageBox5
             // 
             this.imageBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageBox5.Location = new System.Drawing.Point(512, 307);
+            this.imageBox5.Location = new System.Drawing.Point(512, 287);
             this.imageBox5.Name = "imageBox5";
-            this.imageBox5.Size = new System.Drawing.Size(66, 29);
+            this.imageBox5.Size = new System.Drawing.Size(66, 47);
             this.imageBox5.TabIndex = 82;
             this.imageBox5.TabStop = false;
             // 

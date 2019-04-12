@@ -37,12 +37,6 @@ namespace XMLWeather
                 // create a day object
                 Day d = new Day();
 
-                // Get the city and country
-                reader.ReadToFollowing("name");
-                d.location = reader.ReadString();
-                reader.ReadToFollowing("country");
-                d.location += ", " + reader.ReadString();
-
                 // get the date
                 reader.ReadToFollowing("time");
                 d.date = reader.GetAttribute("day");
@@ -62,6 +56,8 @@ namespace XMLWeather
                     days.Add(d);
                 }
             }
+
+            reader.Close();
         }
 
         private void ExtractCurrent()
@@ -84,6 +80,9 @@ namespace XMLWeather
             // gets the condition number associated with current day
             reader.ReadToFollowing("weather");
             days[0].conditionNumber = Convert.ToInt16(reader.GetAttribute("number"));
+
+            reader.Close();
+
         }
 
     }
